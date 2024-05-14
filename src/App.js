@@ -3,7 +3,7 @@ import { MissionUtils } from "@woowacourse/mission-utils";
 class App {
     async play() {
 
-        // MissionUtils.Console.print('숫자 야구 게임을 시작합니다');
+        MissionUtils.Console.print('숫자 야구 게임을 시작합니다');
 
         let flag = 0;
 
@@ -30,7 +30,7 @@ class App {
                 ball = 0;
 
                 // 게임 플레이어는 3개의 숫자를 입력
-                const number = await MissionUtils.Console.readLineAsync('서로 다른 숫자 3개를 입력해주세요 : ');
+                const number = await MissionUtils.Console.readLineAsync('숫자를 입력해주세요 : ');
                 const player = number.split('').map((value) => parseInt(value));
 
                 // 입력 유효성 검사
